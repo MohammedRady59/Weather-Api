@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-color: #24353f;
+  --second-color: #009ad8;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  background: #1e202b;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 2px solid transparent;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--second-color);
+  border: 2px solid var(--second-color);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--second-color);
+  border-color: var(--second-color);
+}
+.tagils {
+  font-size: 10px;
+  color: gray;
+}
+.inputs {
+  background-image: url(../Images/banner.png);
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myinput {
+  border-radius: 30px;
+  position: relative;
+  background-color: #1e202b;
+  color: white;
+  border: 0;
+}
+.btnInput {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  top: 5px;
+  padding: 0 40px;
+  outline: 0;
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  background-color: var(--second-color);
+}
+.myinput:focus {
+  outline: 0;
+  border: 0;
+}
+.overlay {
+  background-color: #1e202b;
+  height: 40vh;
+}
+.weather {
+  background-color: #1e202b;
+}
+.weather .weatherdetail {
+  background-color: #323544;
+  color: white;
+}
+.weather .weatherdetail.two {
+  background-color: #262936;
+}
+.weather .date {
+  background-color: rgb(0 0 0 / 10%);
+  color: #bfc1c8;
+}
+.city {
+  color: #bfc1c8;
+}
+.weatherdetail .temp {
+  font-size: 60px;
+  font-weight: bold;
+}
+.weatherdetail .stats {
+  color: #009ad8;
+}
+.weatherdetail .content {
+  gap: 10px;
+  color: #bfc1c8;
+}
+.weatherdetail .small {
+  color: #bfc1c8;
+  font-size: 19px;
+}
+.allsection {
+  padding: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.bor {
+  border-radius: 10px 0px 0px 10px;
+}
+.bor2 {
+  border-radius: 0px 10px 10px 0px;
+}
+footer {
+  background-color: #262936;
+}
+.icons div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1e202b;
+}
+.icons div i {
+  font-size: 20px;
+  color: #009ad8;
+}
+.icons div:hover {
+  background-color: #009ad8;
+  cursor: pointer;
+}
+.icons div:hover i {
+  color: #1e202b;
+}
+.invaild {
+  background-color: #26293662;
+  backdrop-filter: blur(3px);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.invaild .datainvaild {
+  background: linear-gradient(to top left, #009ad8, #24353f);
+}
+@media screen and (max-width: 992px) {
+  .allsection {
+    padding: 20px;
+    position: initial;
+    transform: translate(0%, 0%);
+    width: 100%;
+  }
+  .overlay {
+    display: none;
+  }
+}
