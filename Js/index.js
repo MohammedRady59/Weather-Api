@@ -7,6 +7,7 @@ document.querySelector(".myForm").addEventListener("submit", function (e) {
   e.preventDefault();
   countery = myinput.value;
   getCountery(countery);
+  myinput.value = null;
 });
 
 async function getCountery(city) {
